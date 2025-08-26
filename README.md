@@ -16,23 +16,24 @@ Supports modular structure with `internal/` folder (DTO, Models, Routes, Utils, 
 ---
 
 ## 📂 Project Structure
+```text
 ecommerce/
 │── cmd/
-│ ├── commands/ # CLI commands (make, seed etc.)
-│ └── main.go # Application entrypoint
+│   ├── commands/   # CLI commands (make, seed etc.)
+│   └── main.go     # Application entrypoint
 │
-│── config/ # App configuration (config.yaml, db setup)
+│── config/         # App configuration (config.yaml, db setup)
 │── internal/
-│ ├── app/ # Services / business logic
-│ ├── dto/ # DTOs (request/response)
-│ ├── models/ # Database models
-│ ├── pkg/ # Reusable packages
-│ ├── routes/ # API routes
-│ └── utils/ # Helpers (pagination, common utils)
+│   ├── app/        # Services / business logic
+│   ├── dto/        # DTOs (request/response)
+│   ├── models/     # Database models
+│   ├── pkg/        # Reusable packages
+│   ├── routes/     # API routes
+│   └── utils/      # Helpers (pagination, common utils)
 │
-│── migrations/ # Database migrations
-│── tmp/ # Compiled files (ignored in git)
-│── .air.toml # Air configuration for live reload
+│── migrations/     # Database migrations
+│── tmp/            # Compiled files (ignored in git)
+│── .air.toml       # Air configuration for live reload
 │── go.mod / go.sum # Go modules
 
 ## 🛠️ Requirements
